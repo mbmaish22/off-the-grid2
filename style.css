@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f4f4f4
+}
+
+header, footer {
+    background: #2d472c;
+    color: white;
+    padding: 1em
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    padding: 1em;
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+article, aside {
+    background: #e0e0e0;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        display: block;
+        margin-top: 0.5em;
+    }
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
